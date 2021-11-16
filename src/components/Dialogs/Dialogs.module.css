@@ -1,0 +1,50 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    padding: 10px;
+}
+
+.dialogsItems {
+    padding: 10px;
+}
+
+.dialogsItems img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.dialogsItems a{
+    color: azure;
+}
+
+.dialog a.active {
+    color: aquamarine;
+}
+
+.oneDialog {
+    display: flex;
+    flex-direction: row;
+}
+
+.textarea {
+    padding: 15px;
+}
+
+.dialog {
+
+}
+
+.messages {
+    padding: 10px;
+}
+
+.message {
+
+}
+
+.messages .message{
+    color: azure;
+}

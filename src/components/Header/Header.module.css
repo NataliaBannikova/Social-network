@@ -1,0 +1,26 @@
+.header {
+  grid-area: h;
+  background-color: green;
+}
+
+.header img {
+  width: 40px;
+}
+
+.loginBlock {
+  float: right;
+  margin-right: 15px;
+  margin-top: 15px;
+  
+}
+
+.loginBlock a {
+  color: white;
+}
+
+.usersAva {
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+
+}
