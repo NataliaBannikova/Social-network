@@ -15,7 +15,7 @@ import UsersContainer from "./components/Users/UsersContainer";
 import {initializeApp} from "./redux/app-reducer"
 import store from './redux/redux-store';
 import { Provider } from 'react-redux';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsContainer'));
 const ProfileContainer = React.lazy(() => import('.//components/Profile/ProfileContainer'));
@@ -69,11 +69,11 @@ let AppContainer = compose(
    connect(mapStateToProps, {initializeApp})) (App);
 
 const SamuraiJSApp = (props) => {
-  return <BrowserRouter basename={process.env.PUBLIC_URL}>
+  return <HashRouter>
     <Provider store={store}>
       <AppContainer/>
     </Provider>
-  </BrowserRouter>
+  </HashRouter>
 }
 
 export default SamuraiJSApp;
